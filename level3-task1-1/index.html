@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="https://static.toiimg.com/photo/80329837/80329837.jpg" alt="Image 1" onclick="openModal();currentSlide(1)">
+        </div>
+        <div class="gallery-item">
+            <img src="https://i.pinimg.com/736x/83/47/05/834705757217327f61cc5e73a6ec6ee4.jpg" alt="Image 2" onclick="openModal();currentSlide(2)">
+        </div>
+        <div class="gallery-item">
+            <img src="https://wallpapers.com/images/high/studying-736-x-1308-background-70nqixlpm3gvxpgg.webp" alt="Image 3" onclick="openModal();currentSlide(3)">
+        </div>
+        <div class="gallery-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeRentDp1SiJqtRHRDD0NkBQ-IIWdpNQMMaw&s" alt="Image 4" onclick="openModal();currentSlide(4)">
+        </div>
+        <div class="gallery-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtoUGl1OU28m8ZprVoBLvPvDbti5UQeUwa59dNhrqvk8feuF6qSGbwKxXIj5Z_9pdLTJ8&usqp=CAU"  alt="Image 5" onclick="openModal();currentSlide(5)">
+        </div>
+        <div class="gallery-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtoUGl1OU28m8ZprVoBLvPvDbti5UQeUwa59dNhrqvk8feuF6qSGbwKxXIj5Z_9pdLTJ8&usqp=CAU" alt="Image 6" onclick="openModal();currentSlide(6)">
+        </div>
+        <div class="gallery-item">
+            <img src="https://cdni.autocarindia.com/Utils/ImageResizer.ashx?n=https://cdni.autocarindia.com/ExtraImages/20210406061737_Mahindra_Thar_RT_lead.jpg&w=700&c=1" alt="Image 7" onclick="openModal();currentSlide(7)">
+        </div>
+        <div class="gallery-item">
+            <img src="https://static.toiimg.com/thumb/msid-81650905,width-400,resizemode-4/81650905.jpg" alt="Image 8" onclick="openModal();currentSlide(8)">
+        </div>
+        <div class="gallery-item">
+            <img src="https://i.pinimg.com/736x/bd/eb/01/bdeb013053519d054b7e07ed18334ae5.jpg" alt="Image 9" onclick="openModal();currentSlide(9)">
+        </div>
+        <div class="gallery-item">
+            <img src="https://i.pinimg.com/736x/d3/9e/13/d39e13fbdbe8f80e19d385d41b0fd268.jpg" alt="Image 10" onclick="openModal();currentSlide(10)">
+        </div>
+    </div>
+
+    <!-- The Modal/Lightbox -->
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+            <div class="mySlides">
+                <img src="https://static.toiimg.com/photo/80329837/80329837.jpg" alt="Image 1">
+            </div>
+
+            <div class="mySlides">
+                <img src="https://i.pinimg.com/736x/83/47/05/834705757217327f61cc5e73a6ec6ee4.jpg" alt="Image 2">
+            </div>
+
+            <div class="mySlides">
+                <img src="https://wallpapers.com/images/high/studying-736-x-1308-background-70nqixlpm3gvxpgg.webp" alt="Image 3">
+            </div>
+
+            <div class="mySlides">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeRentDp1SiJqtRHRDD0NkBQ-IIWdpNQMMaw&s" alt="Image 4">
+            </div>
+
+            <div class="mySlides">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtoUGl1OU28m8ZprVoBLvPvDbti5UQeUwa59dNhrqvk8feuF6qSGbwKxXIj5Z_9pdLTJ8&usqp=CAU" alt="Image 5">
+            </div>
+
+            <div class="mySlides">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtoUGl1OU28m8ZprVoBLvPvDbti5UQeUwa59dNhrqvk8feuF6qSGbwKxXIj5Z_9pdLTJ8&usqp=CAU" alt="Image 6">
+            </div>
+
+            <div class="mySlides">
+                <img src="https://cdni.autocarindia.com/Utils/ImageResizer.ashx?n=https://cdni.autocarindia.com/ExtraImages/20210406061737_Mahindra_Thar_RT_lead.jpg&w=700&c=1" alt="Image 7">
+            </div>
+
+            <div class="mySlides">
+                <img src="https://static.toiimg.com/thumb/msid-81650905,width-400,resizemode-4/81650905.jpg" alt="Image 8">
+            </div>
+
+            <div class="mySlides">
+                <img src="https://i.pinimg.com/736x/bd/eb/01/bdeb013053519d054b7e07ed18334ae5.jpg" alt="Image 9">
+            </div>
+
+            <div class="mySlides">
+                <img src="https://i.pinimg.com/736x/d3/9e/13/d39e13fbdbe8f80e19d385d41b0fd268.jpg" alt="Image 10">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

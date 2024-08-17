@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Changing Button</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button id="colorButton">Click Me</button>
+    </div>
+
+    <script>
+        // JavaScript code to change button color on click
+        document.addEventListener('DOMContentLoaded', () => {
+            const button = document.getElementById('colorButton');
+            
+            // Array of colors
+            const colors = ['#007bff', '#28a745', '#dc3545', '#ffc107', '#17a2b8'];
+            let currentColorIndex = 0;
+
+            button.addEventListener('click', () => {
+                // Update the button's background color
+                currentColorIndex = (currentColorIndex + 1) % colors.length;
+                button.style.backgroundColor = colors[currentColorIndex];
+            });
+        });
+    </script>
+</body>
+</html>

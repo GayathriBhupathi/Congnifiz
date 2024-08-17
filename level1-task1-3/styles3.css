@@ -1,0 +1,112 @@
+/* Basic reset and styling */
+body, h1, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation bar styling */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
+
+/* Hamburger menu styling */
+.hamburger {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 0;
+        width: 100%;
+    }
+
+    .nav-links a {
+        padding: 1rem;
+        text-align: center;
+        display: block;
+        width: 100%;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+/* Main content styling */
+main {
+    margin-top: 3rem; /* Space for fixed navbar */
+    padding: 1rem;
+}
+
+section {
+    padding: 2rem 0;
+}
+
+section h1 {
+    text-align: center;
+}
